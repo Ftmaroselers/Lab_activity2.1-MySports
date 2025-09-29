@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Home</string>
+
+    <!-- Bottom Navigation -->
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="my_sports">My Sports</string>
+    <string name="profile">Profile</string>
+
+    <!-- Sports pages -->
+    <string name="football">Football</string>
+    <string name="basketball">Basketball</string>
+    <string name="volleyball">Volleyball</string>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Home -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mysports.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- Account -->
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.mysports.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_account" />
+
+    <!-- Profile -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.mysports.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <!-- My Sports -->
+    <fragment
+        android:id="@+id/mySportsFragment"
+        android:name="com.mysports.MySportsFragment"
+        android:label="My Sports"
+        tools:layout="@layout/fragment_my_sports">
+
+        <!-- Actions to secondary sports -->
+        <action
+            android:id="@+id/action_mySports_to_football"
+            app:destination="@id/footballFragment" />
+
+        <action
+            android:id="@+id/action_mySports_to_basketball"
+            app:destination="@id/basketballFragment" />
+
+        <action
+            android:id="@+id/action_mySports_to_volleyball"
+            app:destination="@id/volleyballFragment" />
+    </fragment>
+
+    <!-- Secondary Sports Pages -->
+    <fragment
+        android:id="@+id/footballFragment"
+        android:name="com.mysports.FootballFragment"
+        android:label="Football"
+        tools:layout="@layout/fragment_football" />
+
+    <fragment
+        android:id="@+id/basketballFragment"
+        android:name="com.mysports.BasketballFragment"
+        android:label="Basketball"
+        tools:layout="@layout/fragment_basketball" />
+
+    <fragment
+        android:id="@+id/volleyballFragment"
+        android:name="com.mysports.VolleyballFragment"
+        android:label="Volleyball"
+        tools:layout="@layout/fragment_volleyball" />
+
+</navigation>
